@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 import context from '../../context/data/MyContext'
 
 function Testimonial() {
-    const contextData = useContext(context)
+    const contextData = useContext(context) 
     const { mode } = contextData
     return (
         <div>
-            <section className="text-gray-600 body-font mb-10">
+            <section className="text-gray-600 body-font mb-10" style={{backgroundColor: mode === 'dark' ? 'rgb(46 49 55)' : ''}}>
                 <div className="container px-5 py-10 mx-auto">
                     <h1 className=' text-center text-3xl font-bold text-black font-playfair mb-5' style={{color: mode === 'dark' ? 'white' : ''}}>Our Happy Customer</h1>
                     <h2 className=' text-center text-2xl font-semibold font-playfair mb-10' style={{color: mode === 'dark' ? 'white' : ''}}>Word of Praise by our <span className=' text-pink-500'>Valuable</span>Customers</h2>
